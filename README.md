@@ -3,12 +3,12 @@ Cookies is a JavaScript-based cookie analyzer and creator. It's purpose is to in
 
 ### Install
 To install, simply add this code to your <head> tag:
-```
+```html
   <script src="https://raw.githubusercontent.com/Incrested/Cookies/master/cookies.js"></script>
 ```
 
 An example of Cookies would be:
-```
+```html
 <script>
 	function cookieCheck() {
 		var user=getCookie("cookiename");
