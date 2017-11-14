@@ -20,12 +20,14 @@ function setCookie(cname,cvalue,exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function editCookie(cname,cvalue,exdays) {
+function editCookie(cname,cvalue) {
     cookieTemp = (document.cookie.match(/^(?:.*;)?\s*cname\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1]
     if(!cookieTemp === undefined) {
       console.log("Cookie Not Found.")
     } else {
       var d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      var expire = "expires=" + d.toGMTString();
       document.cookie = cname + "=" + cvalue +";" + expires + ";path=/";
     }
 }
