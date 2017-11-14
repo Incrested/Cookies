@@ -19,3 +19,13 @@ function setCookie(cname,cvalue,exdays) {
     var expire = "expires=" + d.toGMTString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
+
+function editCookie(cname,cvalue,exdays) {
+    cookieTemp = (document.cookie.match(/^(?:.*;)?\s*cname\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1]
+    if(!cookieTemp === undefined) {
+      console.log("Cookie Not Found.")
+    } else {
+      var d = new Date();
+      document.cookie = cname + "=" + cvalue +";" + expires + ";path=/";
+    }
+}
