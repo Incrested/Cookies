@@ -4,7 +4,7 @@ Cookies is a JavaScript-based cookie analyzer and creator. It's purpose is to in
 ### Install
 To install, simply add this code to your <head> tag:
 ```html
-  <script src="https://incrested.github.io/Cookies/scripts/cookies.js"></script>
+  <script src="https://cdn.doamatto.xyz/cookies/latest.js"></script>
 ```
 
 An example of Cookies would be:
